@@ -1,5 +1,5 @@
 
-[![Node.js CI](https://github.com/Tijmenpower/ekc-discord-bot/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/Tijmenpower/ekc-discord-bot/actions/workflows/node.js.yml)
+[![Node.js CI](https://github.com/Tijmenpower/ekc-discord-bot/actions/workflows/index.js/badge.svg?branch=main)](https://github.com/Tijmenpower/ekc-discord-bot/actions/workflows/index.js)
 - 👋 Hi, I’m @Tijmenpower
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
