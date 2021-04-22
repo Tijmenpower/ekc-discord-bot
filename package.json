@@ -1,0 +1,17 @@
+{
+  "name": "ekc",
+  "version": "1.0.0",
+  "description": "ekc discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tijmen",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "wokcommands": "^1.2.6"
+  }
+}
