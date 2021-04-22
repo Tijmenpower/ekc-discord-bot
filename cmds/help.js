@@ -5,8 +5,8 @@ module.exports.run = async(bot, message, args) => {
     .setColor('#FFFC33')
     .setTitle("Command list:",)
     .addFields(
-      { name: 'Koning(in)', value: '**!setprefix [ bv ? ]**\n ', inline: true },
-      { name: 'algemeen', value: ' ', inline: true },
+      { name: 'Koning(in)', value: '**overval @landA @LandB**\n ', inline: true },
+      { name: 'algemeen', value: '#soon', inline: true },
     )
     .setFooter(`EpicKingdomCommunity © 2021`);
     message.author.send({embed}).catch(e =>{
