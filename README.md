@@ -1,6 +1,7 @@
 
 - 👋 Hi, I’m ItsNotMy
 - This is the EKC discord bot code
+- ekc uptime[ https://stats.uptimerobot.com/9GkONImKp1 ]
 
 | versie  |       date         |
 | ------- | ------------------ |
