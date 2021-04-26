@@ -37,6 +37,7 @@ const meded = new Discord.MessageEmbed()
 	.setFooter(`EpicKingdomCommunity © 2021`)
 	.setTimestamp();
 	client.channels.cache.get("834458920717516862").send(meded)
+        client.channels.cache.get("834458920717516862").send(`${aanval} | ${op}`)
 }else {
 	let geenperms = new Discord.MessageEmbed()
 .setColor("#C90101")
