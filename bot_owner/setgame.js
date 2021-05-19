@@ -2,7 +2,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 exports.run = async (client, message, args) => {
-  if (message.author.id == "362983908532420608","362981513777905665") {
+  if (message.author.id == "362983908532420608","362981513777905665") { //job1 en joep hebben alleen perms voor !setgame [status]
     var gametoset = args.join(' ');
     if (!gametoset) gametoset = null;
     client.user.setActivity(gametoset);
