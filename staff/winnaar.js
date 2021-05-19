@@ -7,7 +7,7 @@ exports.run = (client, message , args) => {
 	const meded = new Discord.MessageEmbed()
 	.setColor('#FFFC33')
 	.setTitle("**Overval afgelopen**")
-	.addField(`oorlog is voorbijenen de winnaar zijn [ ${aanval} ]`,`\n\u200b\n`)
+	.addField(`De overval is voorbij! De winnaar is:`,`${aanval}`)
 	.setFooter(`EpicKingdomCommunity © 2021`)
 	.setTimestamp();
 	client.channels.cache.get(botSettings.mededeling).send(meded)
