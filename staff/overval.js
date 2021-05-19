@@ -1,8 +1,9 @@
 const Discord = require("discord.js");
+const botSettings = require("..//botsettings.json");
 exports.run = (client, message , args) => {
 	let aanval = args[0];
 	let op = args[1];		
-	if(message.member.roles.cache.has('834423056474439750')) {
+	if(message.member.roles.cache.has(botSettings.koningrole)) {
 const stafflogs = new Discord.MessageEmbed()
 	.setColor('#FFFC33')
 	.setTitle("**Overval**")
@@ -12,43 +13,33 @@ const stafflogs = new Discord.MessageEmbed()
 	)
 	.addFields(
 		{ name: `verzonden door leider`, value: `${message.author}` },
+		{ name: `Type !accept @land-aanvallers @land-verdedigers`, value: `om de overval teaccepteren`},
 	  )
 	.setFooter(`EpicKingdomCommunity © 2021`)
 	.setTimestamp();
-	client.channels.cache.get("834037069931741215").send(stafflogs)
+	client.channels.cache.get(botSettings.stafflogs).send(stafflogs)
 let contact = new Discord.MessageEmbed()
 .setColor("#FFFC33")
 .setTitle('Overval')
 .addFields(
 	{ name: `een land voert een overval uit`, value: `#staff-overvals-logs`},
 	{ name: `Overval verklaard door`, value: `${message.author}`},
+	{ name: `Type !accept @land-aanvallers @land-verdedigers`, value: `om de overval teaccepteren`},
   )
 .setFooter(`EpicKingdomCommunity © 2021`)
 .setTimestamp();
-message.guild.roles.cache.get("834388352341377054").members.forEach(member => member.send(contact));
-const meded = new Discord.MessageEmbed()
-	.setColor('#FFFC33')
-	.setTitle("**Overval**")
-	.addFields(
-	  { name: `een land voert een overval uit`, value: `door leider ${message.author}` },
-	  { name: `**aanvalers**`, value: `${aanval}`, inline: true },
-	  { name: `**verdedigers**`, value: `${op}`, inline: true },
-	)
-	.setFooter(`EpicKingdomCommunity © 2021`)
-	.setTimestamp();
-	client.channels.cache.get("834458920717516862").send(meded)
-        client.channels.cache.get("834458920717516862").send(`${aanval} | ${op}\nals staff binne 10 min niet online is gaat het NIET door`)
+message.guild.roles.cache.get(botSettings.staffrole).members.forEach(member => member.send(contact));
 }else {
 	let geenperms = new Discord.MessageEmbed()
 .setColor("#C90101")
 .setTitle('Geen Perms')
 .addFields(
-	{ name: 'je bent geen leider van een land', value: `${message.author}`},
+	{ name: 'Je bent geen leider van een land', value: `${message.author}`},
   )
 .setFooter(`EpicKingdomCommunity © 2021`)
 message.channel.send(geenperms);
 }
-}
+	}
 exports.conf = {
 	enabled: true,
 	guildOnly: false,
@@ -62,5 +53,5 @@ exports.help = {
 	description: "Embeds something",
 	usage: "embed [description]"
 };
-
-// `${aanvl}`
+//geel #FFFC33
+//rood #90101
