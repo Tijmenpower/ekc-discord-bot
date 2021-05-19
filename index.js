@@ -71,10 +71,12 @@ setTimeout(() => {
 }, cdseconds * 1000);
 });
 bot.on("ready", () => {
-  bot.user.setStatus("DND")
-  bot.user.setActivity("EpicKindomCommunity","test");
+
+bot.user.setStatus("DND")
+bot.user.setActivity("EpicKindomCommunity","test");
 });
 bot.login(botSettings.token);
 
 //geel #FFFC33
-//rood #C90101
+//rood #90101
+//green #
