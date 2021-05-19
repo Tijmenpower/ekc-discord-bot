@@ -1,4 +1,8 @@
 {
-    "token": "NzgxNTMyOTkyNjAxNzE4Nzg0.X7_BUQ.6cy_8sNmN9YuIsVTw_-YkhjOOLA",
-    "prefix": "!"
+    "token": "discord bot token",
+    "prefix": "!",
+    "staffrole": "staffrole hier krijgt staff perms voot !accept en !winnaar plus ze krijgen een dm bericht",
+    "koningrole": "koning role geeft toegan voot !overval",
+    "mededeling": "MededlingID", 
+    "stafflogs": "stafflogsID" 
 }
