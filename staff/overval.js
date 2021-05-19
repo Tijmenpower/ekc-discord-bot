@@ -8,7 +8,7 @@ const stafflogs = new Discord.MessageEmbed()
 	.setColor('#FFFC33')
 	.setTitle("**Overval**")
 	.addFields(
-	  { name: `**aanvalers**`, value: `${aanval}`, inline: true },
+	  { name: `**aanvallers**`, value: `${aanval}`, inline: true },
 	  { name: `**verdedigers**`, value: `${op}`, inline: true },
 	)
 	.addFields(
