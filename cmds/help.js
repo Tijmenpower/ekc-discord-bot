@@ -1,21 +1,27 @@
 const Discord = require("discord.js");
-
 module.exports.run = async(bot, message, args) => {
     const embed = new Discord.MessageEmbed()
-    .setColor('#FFFC33')
+    .setColor('#0099ff')
     .setTitle("Command list:",)
     .addFields(
-      { name: 'Koning(in)', value: '**overval @landA @LandB**\n ', inline: true },
-      { name: 'algemeen', value: '#soon', inline: true },
+      { name: 'Info/help', value: '#SOON', inline: true },
+      { name: 'koning', value: '**!overval @landA[overvallers] @landB[verdedigers]** \n ', inline: true },
+      { name: 'Staff', value: '**!accept  @landA[overvallers] @landB[verdedigers]\n **!winnaar @land[winnaar]', inline: true },
     )
-    .setFooter(`EpicKingdomCommunity © 2021`);
+    .setFooter(`© Test.bot `);
     message.author.send({embed}).catch(e =>{
-      if (e) {
-      message.channel.send(`#Error#. je DMs zijn dicht .`);
-      message.channel.send({embed});
+      if(e) {
+        let Error = new Discord.MessageEmbed()
+        .setColor("#C90101")
+        .setTitle('Error, Er is een probleem!')
+        .setDescription('Uw de is dicht of u heeft de bot geblokkeerd')
+        .setFooter(`EpicKingdomCommunity © 2021\nfout code: `)
+        message.channel.send(Error);
       }
     });
-    message.reply("**kijk je Berichten / DMs!**");
+    message.react('✅');
+    setTimeout(() => message.delete(), 10000)
+    
   }
 module.exports.help = {
   name : "help"
