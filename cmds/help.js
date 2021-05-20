@@ -7,6 +7,7 @@ module.exports.run = async(bot, message, args) => {
       { name: 'Info/help', value: '#SOON', inline: true },
       { name: 'koning', value: '**!overval @landA[overvallers] @landB[verdedigers]** \n ', inline: true },
       { name: 'Staff', value: '**!accept  @landA[overvallers] @landB[verdedigers]\n **!winnaar @land[winnaar]', inline: true },
+      { name: 'owner', value: '**!setgame {tekst}', inline: true },
     )
     .setFooter(`© Test.bot `);
     message.author.send({embed}).catch(e =>{
