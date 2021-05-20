@@ -12,7 +12,6 @@ let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} se
     let inline = true
     let botembed = new Discord.MessageEmbed()
     .setColor("#FFFC33")
-    .addField("Bot Invite", `https://discord.com/api/oauth2/authorize?client_id=781532992601718784&permissions=3820485952&scope=bot`, inline)
     .addField("Uptime:", `${uptime}`)
     .addField("Deze bot is special gemaakt voor", `EpicKingdomCommunity`)
     .setFooter(`EpicKingdomCommunity © 2021`)
