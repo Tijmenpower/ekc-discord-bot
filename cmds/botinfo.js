@@ -18,9 +18,11 @@ let uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} se
     .setFooter(`EpicKingdomCommunity © 2021`)
     
     message.channel.send(botembed);
+    message.react('✅');
+    setTimeout(() => message.delete(), 10000)
 
 }
 
 module.exports.help = {
-  name:"invite"
+  name:"botinfo"
 }
